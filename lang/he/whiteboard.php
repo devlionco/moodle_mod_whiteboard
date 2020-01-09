@@ -25,35 +25,35 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Whiteboard';
-$string['pluginname'] = 'Whiteboard';
-$string['whiteboardname'] = 'Name';
-$string['whiteboardname_help'] = 'Activity name';
-$string['whiteboardsettings'] = 'Activity settings';
-$string['whiteboardfieldset'] = 'Appearance';
-$string['type'] = 'Whiteboard Type';
-$string['pluginadministration'] = 'Whiteboard Administration';
+$string['modulename'] = 'לוח שיתופי';
+$string['pluginname'] = 'לוח שיתופי';
+$string['whiteboardname'] = 'שם הלוח';
+$string['whiteboardname_help'] = 'שם הפעילות';
+$string['whiteboardsettings'] = 'הגדרות פעילות';
+$string['whiteboardfieldset'] = 'תצוגה';
+$string['type'] = 'סוג הלוח';
+$string['pluginadministration'] = 'ניהול והגדרות הלוח';
 
-$string['whiteboard_token'] = 'Whiteboard Service Token';
-$string['whiteboard_token_desc'] = '';
-$string['whiteboard_url'] = 'Whiteboard Service Url';
-$string['whiteboard_url_desc'] = '';
+$string['whiteboard_token'] = 'קוד השירות';
+$string['whiteboard_token_desc'] = 'תיאור קוד השירות';
+$string['whiteboard_url'] = 'כתובת לוח שיתופי';
+$string['whiteboard_url_desc'] = 'תיאור כתובת לוח שיתופי';
 
-$string['openpopup'] = 'Start Whiteboard';
-$string['newwindow'] = 'Start Whiteboard';
-$string['directlink'] = 'Start Whiteboard';
-$string['modulenameplural'] = 'whiteboards';
-$string['nonewmodules'] = 'No new modules';
+$string['openpopup'] = 'התחל לוח שיתופי';
+$string['newwindow'] = 'התחל לוח שיתופי';
+$string['directlink'] = 'התחל לוח שיתופי';
+$string['modulenameplural'] = 'לוחות שיתופיים';
+$string['nonewmodules'] = 'אין מודולים חדשים';
 
 $string['type_iframe'] = 'Iframe';
-$string['type_window'] = 'New Window';
-$string['type_popup'] = 'Pop Up';
-$string['type_link'] = 'Link';
+$string['type_window'] = 'חלון חדש';
+$string['type_popup'] = 'פתיחה בחלון חדש';
+$string['type_link'] = 'קישור';
 
-$string['curlerror'] = 'Error occured during server request: {$a}';
-$string['missingidandcmid'] = 'id or cmid missing';
+$string['curlerror'] = 'ארעה שגיאת שרת: {$a}';
+$string['missingidandcmid'] = 'חסר פרמטר id או cmid';
 
-$string['privacy:metadata'] = 'The mod_whiteboard plugin does not store any personal data.';
+$string['privacy:metadata'] = 'תוסף לוח שיתופי אינו מכיל מידע אישי';
 
-$string['whiteboard:addinstance'] = 'Whiteboard add instance';
-$string['whiteboard:view'] = 'Whiteboard view';
+$string['whiteboard:addinstance'] = 'הוסף לוח שיתופי';
+$string['whiteboard:view'] = 'מבט לוח שיתופי';
