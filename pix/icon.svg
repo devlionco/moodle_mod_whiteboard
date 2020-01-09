@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="42px" viewBox="0 0 44 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Whiteboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="91.0760789%" y1="49.5464853%" x2="9.44475446%" y2="50.4535147%" id="linearGradient-1">
+            <stop stop-color="#E6D07D" offset="0%"></stop>
+            <stop stop-color="#E3B852" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#B08051" offset="0%"></stop>
+            <stop stop-color="#A6674B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#B08051" offset="0%"></stop>
+            <stop stop-color="#A6674B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#C7DF67" offset="0%"></stop>
+            <stop stop-color="#A9C056" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Whiteboard" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle" stroke="#95A7D5" stroke-width="1.2" fill="#ADD0F6" x="2" y="4" width="38" height="20"></rect>
+            <rect id="Rectangle" fill="#C4DFFD" x="3" y="4" width="1" height="20"></rect>
+            <rect id="Rectangle-Copy-14" fill="#C4DFFD" x="38" y="4" width="1" height="20"></rect>
+            <rect id="Rectangle" stroke="#C29555" stroke-width="1.2" fill="url(#linearGradient-1)" x="0" y="0" width="42" height="4"></rect>
+            <rect id="Rectangle-Copy-9" stroke="#C29555" stroke-width="1.2" fill="url(#linearGradient-1)" x="0" y="24" width="42" height="4"></rect>
+            <polygon id="Rectangle" stroke="#7C522B" stroke-width="1.2" fill="url(#linearGradient-2)" points="5.66666667 28 11 28 8.33333333 40 3 40"></polygon>
+            <polygon id="Rectangle-Copy-10" stroke="#7C522B" stroke-width="1.2" fill="url(#linearGradient-3)" transform="translate(35.500000, 34.000000) scale(-1, 1) translate(-35.500000, -34.000000) " points="34.3333333 28 39 28 36.6666667 40 32 40"></polygon>
+            <rect id="Rectangle" fill="#68A4E4" x="21" y="8" width="11" height="2"></rect>
+            <rect id="Rectangle" fill="#C4DFFD" x="3" y="5" width="36" height="1"></rect>
+            <rect id="Rectangle-Copy-8" fill="#C4DFFD" x="3" y="22" width="36" height="1"></rect>
+            <rect id="Rectangle-Copy-12" fill="#76B0EE" x="21" y="12" width="11" height="2"></rect>
+            <rect id="Rectangle-Copy-13" fill="#76B0EE" x="26" y="16" width="6" height="2"></rect>
+            <rect id="Rectangle-Copy-11" stroke="#8CA058" stroke-width="1.2" fill="url(#linearGradient-4)" x="5" y="19" width="11" height="5"></rect>
+        </g>
+    </g>
+</svg>
