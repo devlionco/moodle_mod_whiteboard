@@ -27,14 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 $settings->add(new admin_setting_configtext('mod_whiteboard/token',
     get_string('whiteboard_token', 'mod_whiteboard'),
     get_string('whiteboard_token_desc', 'mod_whiteboard'),
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiY2xpZW50MkBkZXZsaW9uLmNvIiwiZmlyc3RfbmFtZSI6IkNsaWVudDIiLCJsYXN0X25hbWUiOiJDbGllbnQifSwiaWF0IjoxNTcxMjk4Nzc4LCJleHAiOjMzMTI4MjI0Nzc4fQ.RqWY0fSjbSWHyTyP_OYDuK5vMNFOqvbdWqZDWhOnyuU',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiZGVtb0BkZXZsaW9uLmNvIiwiZmlyc3RfbmFtZSI6IkRlbW8iLCJsYXN0X25hbWUiOiJNb29kbGUifSwiaWF0IjoxNTc1NDA1OTQ4LCJleHAiOjMzMTMyMzMxOTQ4fQ.1ke-SQbYV5AJ7UbpxfbB8yZinGo_FDO5YzfaZnINpgs',
     PARAM_TEXT
 ));
 
 $settings->add(new admin_setting_configtext('mod_whiteboard/url',
         get_string('whiteboard_url', 'mod_whiteboard'),
     get_string('whiteboard_url_desc', 'mod_whiteboard'),
-    'https://app.whiteboard.com/',
+    'https://wb.devlion.co/',
     PARAM_TEXT
 ));
 
