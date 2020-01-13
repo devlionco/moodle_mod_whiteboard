@@ -47,7 +47,7 @@ class whiteboard extends \core\persistent
                 'type' => PARAM_TEXT
             ),
             'intro' => array(
-                'type' => PARAM_TEXT
+                'type' => PARAM_CLEANHTML
             ),
             'introformat' => array(
                 'type' => PARAM_INT
