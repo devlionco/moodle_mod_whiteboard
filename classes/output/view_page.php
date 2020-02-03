@@ -75,7 +75,7 @@ class view_page implements renderable, templatable {
 
         // Create whiteboard.
         $user = $whiteboard->registeruser(
-            $USER->email,
+            explode($USER->email, ';')[0],
             $USER->firstname,
             $USER->lastname,
             [$this->cm->id]
