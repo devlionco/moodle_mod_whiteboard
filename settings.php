@@ -27,14 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 $settings->add(new admin_setting_configtext('mod_whiteboard/token',
     get_string('whiteboard_token', 'mod_whiteboard'),
     get_string('whiteboard_token_desc', 'mod_whiteboard'),
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiZGVtb0BkZXZsaW9uLmNvIiwiZmlyc3RfbmFtZSI6IkRlbW8iLCJsYXN0X25hbWUiOiJNb29kbGUifSwiaWF0IjoxNTc1NDA1OTQ4LCJleHAiOjMzMTMyMzMxOTQ4fQ.1ke-SQbYV5AJ7UbpxfbB8yZinGo_FDO5YzfaZnINpgs',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1heEFnZSI6NTU1NTU1NTU1NTU1NTU1LCJmaXJzdF9uYW1lIjoiQ2xpZW50IiwibGFzdF9uYW1lIjoiT25lIiwiZW1haWwiOiJjbGllbnRAZGV2bGlvbi5jbyJ9LCJpYXQiOjE1ODA2NTg4MDMsImV4cCI6NTU3MTM2MjE0MzU4fQ.j1KDJ-agIsUBDVlUQWKUMQ4YA1nUvMLqPYT7pzLydec',
     PARAM_TEXT
 ));
 
 $settings->add(new admin_setting_configtext('mod_whiteboard/url',
         get_string('whiteboard_url', 'mod_whiteboard'),
     get_string('whiteboard_url_desc', 'mod_whiteboard'),
-    'https://wb.devlion.co/',
+    'https://wp.eduapps.io/',
     PARAM_TEXT
 ));
 
