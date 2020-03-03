@@ -17,10 +17,10 @@ Installations
 1.Validate that your moodle instance has permission to access to server wb.devlion.co via CURL
 
 2.Set token:
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoiZGVtbzJAZ21haWwuY29tIiwiZmlyc3RfbmFtZSI6IkRlbW8yIiwibGFzdF9uYW1lIjoiMiIsIm1heEFnZSI6MjMyMzIzMjU1NTN9LCJpYXQiOjE1Nzg1NjczMDcsImV4cCI6MTYwMTc5OTYzMn0.Gcaq5ZaeCEu_dAoMEwt9dMHWTz_ofra4uAkR_tkK2NU
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1heEFnZSI6NTU1NTU1NTU1NTU1NTU1LCJmaXJzdF9uYW1lIjoiQ2xpZW50IiwibGFzdF9uYW1lIjoiT25lIiwiZW1haWwiOiJjbGllbnRAZGV2bGlvbi5jbyJ9LCJpYXQiOjE1ODA2NTg4MDMsImV4cCI6NTU3MTM2MjE0MzU4fQ.j1KDJ-agIsUBDVlUQWKUMQ4YA1nUvMLqPYT7pzLydec
 
 3. Set Service Url:
-https://wb.devlion.co
+https://wp.eduapps.io/
 
 4. Add new activity 
 
