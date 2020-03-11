@@ -14,22 +14,27 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * iframe js
+ * dispatch js
  *
  * @package    mod_whiteboard
- * @copyright   2019 Devlion <info@devlion.co>
+ * @copyright   2020 Devlion <info@devlion.co>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 define([
     "jquery",
-], function ($) {
+    "core/templates"
+], function ($, Templates) {
     "use strict";
-
     return {
-        init: function (url) {
-            $(document).ready(function () {
-                $('#whiteboardiframe').attr('src', url);
+        init: function (type, url, title) {
+            $('#whiteboardsessioniframe').ready(function() {
+                let element = $('#whiteboardsessioniframe');
+
+                Templates.render('mod_whiteboard/' + type, {url:url, name:title}).done(function(html, js) {
+                    element.after(html);
+                    Templates.runTemplateJS(js);
+                });
             });
         }
     };
