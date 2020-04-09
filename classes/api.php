@@ -40,18 +40,21 @@ class api {
      * @param string $name
      * @param string $description
      * @param array $additionaldata - should contain activityId data
+     * @param array $copyfrom - should contain activityId data which you want to copy from
      *
      * Example: $additionaldata = [766]; 766 - activity_id
+     *          $copyfrom = [765]; 765 - activity_id
      *
      * @return array
      */
-    public function createpage(string $name, string $description, array $additionaldata = []) {
+    public function createpage(string $name, string $description, array $additionaldata = [], array $copyfrom = []) {
         $response = $this->request(
             $this->baseurl . 'whiteboard/create',
                 [
                     'name' => $name,
                     'description' => $description,
-                    'additional_data' => $additionaldata
+                    'additional_data' => $additionaldata,
+                    'copy_from' => $copyfrom
                 ]
         );
 
