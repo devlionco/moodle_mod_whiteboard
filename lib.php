@@ -63,10 +63,11 @@ function whiteboard_add_instance($moduleinstance, $mform = null) {
             'name' => api::slug($moduleinstance->name),
             'description' => $moduleinstance->name,
             'additional_data' => [$moduleinstance->coursemodule],
+            'copy_from' => [] // add activity_id to copy from
     ];
 
     // Create whiteboard.
-    $api->createpage($data['name'], $data['description'], $data['additional_data']);
+    $api->createpage($data['name'], $data['description'], $data['additional_data'], $data['copy_form']);
 
     $record = (object) [
         'course' => $moduleinstance->course,
