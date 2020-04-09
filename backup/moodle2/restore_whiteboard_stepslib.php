@@ -40,6 +40,7 @@ class restore_whiteboard_activity_structure_step extends restore_activity_struct
 
     /**
      * Process whiteboard information
+     *
      * @param array $data information
      */
     protected function process_whiteboard($data) {
@@ -48,12 +49,13 @@ class restore_whiteboard_activity_structure_step extends restore_activity_struct
         require_once($CFG->dirroot . '/mod/whiteboard/lib.php');
 
         $record = (object) [
-            'course' => $this->get_courseid(),
-            'name' => $data['name'],
-            'intro' => $data['intro'],
-            'type' => $data['type'],
-            'introformat' => $data['introformat'],
-            'coursemodule' => $this->task->get_moduleid()
+                'course' => $this->get_courseid(),
+                'name' => $data['name'],
+                'intro' => $data['intro'],
+                'type' => $data['type'],
+                'introformat' => $data['introformat'],
+                'coursemodule' => $this->task->get_moduleid(),
+                'oldmoduleid' => $this->task->get_old_moduleid()
         ];
 
         $id = whiteboard_add_instance($record);

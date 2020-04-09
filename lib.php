@@ -36,7 +36,7 @@ function whiteboard_supports($feature) {
     switch ($feature) {
         case FEATURE_MOD_INTRO:
         case FEATURE_BACKUP_MOODLE2:
-        return true;
+            return true;
         default:
             return null;
     }
@@ -62,19 +62,23 @@ function whiteboard_add_instance($moduleinstance, $mform = null) {
     $data = [
             'name' => api::slug($moduleinstance->name),
             'description' => $moduleinstance->name,
-            'additional_data' => [$moduleinstance->coursemodule],
-            'copy_from' => [] // add activity_id to copy from
+            'additional_data' => [$moduleinstance->coursemodule]
     ];
 
+    $oldmoduleid = [];
+    if (!empty($moduleinstance->oldmoduleid)) {
+        $oldmoduleid = [$moduleinstance->oldmoduleid];
+    }
+
     // Create whiteboard.
-    $api->createpage($data['name'], $data['description'], $data['additional_data'], $data['copy_form']);
+    $api->createpage($data['name'], $data['description'], $data['additional_data'], $oldmoduleid);
 
     $record = (object) [
-        'course' => $moduleinstance->course,
-        'name' => $moduleinstance->name,
-        'type' => $moduleinstance->type,
-        'intro' => $moduleinstance->intro ?? '',
-        'introformat' => $moduleinstance->introformat ?? 0,
+            'course' => $moduleinstance->course,
+            'name' => $moduleinstance->name,
+            'type' => $moduleinstance->type,
+            'intro' => $moduleinstance->intro ?? '',
+            'introformat' => $moduleinstance->introformat ?? 0,
     ];
 
     $whiteboard = new \mod_whiteboard\whiteboard(0, $record);
@@ -99,11 +103,11 @@ function whiteboard_update_instance($moduleinstance, $mform = null) {
     $moduleinstance->id = $moduleinstance->instance;
 
     $record = (object) [
-        'course' => $moduleinstance->course,
-        'name' => $moduleinstance->name,
-        'intro' => $moduleinstance->intro ?? '',
-        'type' => $moduleinstance->type,
-        'introformat' => $moduleinstance->introformat ?? 0,
+            'course' => $moduleinstance->course,
+            'name' => $moduleinstance->name,
+            'intro' => $moduleinstance->intro ?? '',
+            'type' => $moduleinstance->type,
+            'introformat' => $moduleinstance->introformat ?? 0,
     ];
 
     $whiteboard = new \mod_whiteboard\whiteboard($moduleinstance->instance);
